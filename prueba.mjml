@@ -1,11 +1,33 @@
 <mjml>
 	<mj-head>
-		<mj-preview>Hello MJML</mj-preview>
+		<mj-attributes>
+			<mj-all font-family="Arial, sans-serif" />
+			<mj-body background-color="#f3f3f3" />
+		</mj-attributes>
+		<mj-style inline="inline">
+			.btn { display: inline-block; font-weight: 400; text-align: center;
+			white-space: nowrap; vertical-align: middle; -webkit-user-select: none;
+			-moz-user-select: none; -ms-user-select: none; user-select: none; border:
+			1px solid transparent; padding: .375rem .75rem; font-size: 1rem;
+			line-height: 1.5; border-radius: .25rem; transition: color .15s
+			ease-in-out,background-color .15s ease-in-out,border-color .15s
+			ease-in-out,box-shadow .15s ease-in-out; } .btn-primary { color: #fff;
+			background-color: #007bff; border-color: #007bff; }
+		</mj-style>
+		<mj-raw>
+			<!-- Enlace hacia el archivo CSS de Bootstrap -->
+			<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+			<!-- Enlace hacia el archivo JavaScript de Bootstrap -->
+			<script src="assets/js/bootstrap.min.js"></script>
+		</mj-raw>
 	</mj-head>
 	<mj-body>
 		<mj-section>
 			<mj-column>
-				<mj-text> Hello World! </mj-text>
+				<mj-text font-size="20px" color="#333" font-family="Arial">
+					Hello World!
+				</mj-text>
+				<mj-button href="#" css-class="btn btn-primary">Learn More</mj-button>
 			</mj-column>
 		</mj-section>
 	</mj-body>
